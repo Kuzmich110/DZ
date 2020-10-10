@@ -23,12 +23,17 @@ class Person{
 	  return "
 	    Меня зовут: ".$this->name."<br>
 	    Мою маму зовут: ".$this->mother->name."<br>
-	    Моего папу зовут: ".$this->getFather()->getName();
+	    Моих бабушку дедушку по маменой линии зовут: ".$this->getMother()->getMother()->getName()." и ".$this->getMother()->getFather()->getName()."<br>
+	    Моего папу зовут: ".$this->getFather()->getName()."<br>
+	    Моих бабушку дедушку по папеной линии зовут: ".$this->getFather()->getMother()->getName()." и ".$this->getFather()->getFather()->getName();
 	}
 }
-
-$oleg = new person("Олег","Петров",41);
-$olga = new person("Ольга","Петрова",41);
+$egor = new person("Егор","Петров",71);
+$oksana = new person("Оксана","Петрова",69);
+$ivan = new person("Иван","Иванов",72);
+$elena = new person("Елена","Иванова",68);
+$oleg = new person("Олег","Петров",41,$oksana,$egor);
+$olga = new person("Ольга","Петрова",41,$elena,$ivan);
 $igor = new person("Игорь","Петров",12,$olga,$oleg);
 echo $igor->getInfo();
 ?>
