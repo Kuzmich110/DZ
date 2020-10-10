@@ -23,9 +23,11 @@ class Person{
 	  return "
 	    Меня зовут: ".$this->name."<br>
 	    Мою маму зовут: ".$this->mother->name."<br>
-	    Моих бабушку дедушку по маменой линии зовут: ".$this->getMother()->getMother()->getName()." и ".$this->getMother()->getFather()->getName()."<br>
+	    Мою бабушку по маменой линии зовут: ".$this->getMother()->getMother()->getLastname()." ".$this->getMother()->getMother()->getName()."<br>
+	    Моего дудушку по маменой линии зовут: ".$this->getMother()->getFather()->getLastname()." ".$this->getMother()->getFather()->getName()."<br>
 	    Моего папу зовут: ".$this->getFather()->getName()."<br>
-	    Моих бабушку дедушку по папеной линии зовут: ".$this->getFather()->getMother()->getName()." и ".$this->getFather()->getFather()->getName();
+	    Мою бабушку по маменой линии зовут: ".$this->getFather()->getMother()->getLastname()." ".$this->getFather()->getMother()->getName()."<br>
+	    Моего дудушку по маменой линии зовут: ".$this->getFather()->getFather()->getLastname()." ".$this->getFather()->getFather()->getName();
 	}
 }
 $egor = new person("Егор","Петров",71);
