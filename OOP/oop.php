@@ -23,11 +23,11 @@ class Person{
 	  return "
 	    Меня зовут: ".$this->name."<br>
 	    Мою маму зовут: ".$this->mother->name."<br>
-	    Мою бабушку по маменой линии зовут: ".$this->getMother()->getMother()->getLastname()." ".$this->getMother()->getMother()->getName()."<br>
-	    Моего дудушку по маменой линии зовут: ".$this->getMother()->getFather()->getLastname()." ".$this->getMother()->getFather()->getName()."<br>
+	    Мою бабушку по маменой линии зовут: ".$this->getMother()->getMother()->getLastname()." ".$this->getMother()->getMother()->getName()." её возраст ".$this->getMother()->getMother()->getAge()." лет <br>
+	    Моего дудушку по маменой линии зовут: ".$this->getMother()->getFather()->getLastname()." ".$this->getMother()->getFather()->getName()." его возраст ".$this->getMother()->getFather()->getAge()." года <br>
 	    Моего папу зовут: ".$this->getFather()->getName()."<br>
-	    Мою бабушку по папеной линии зовут: ".$this->getFather()->getMother()->getLastname()." ".$this->getFather()->getMother()->getName()."<br>
-	    Моего дудушку по папеной линии зовут: ".$this->getFather()->getFather()->getLastname()." ".$this->getFather()->getFather()->getName();
+	    Мою бабушку по папеной линии зовут: ".$this->getFather()->getMother()->getLastname()." ".$this->getFather()->getMother()->getName()." её возраст ".$this->getFather()->getMother()->getAge()." лет <br>
+	    Моего дудушку по папеной линии зовут: ".$this->getFather()->getFather()->getLastname()." ".$this->getFather()->getFather()->getName()." его возраст ".$this->getFather()->getFather()->getAge()." год ";
 	}
 }
 $egor = new person("Егор","Петров",71);
