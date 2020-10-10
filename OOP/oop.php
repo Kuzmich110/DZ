@@ -26,8 +26,8 @@ class Person{
 	    Мою бабушку по маменой линии зовут: ".$this->getMother()->getMother()->getLastname()." ".$this->getMother()->getMother()->getName()."<br>
 	    Моего дудушку по маменой линии зовут: ".$this->getMother()->getFather()->getLastname()." ".$this->getMother()->getFather()->getName()."<br>
 	    Моего папу зовут: ".$this->getFather()->getName()."<br>
-	    Мою бабушку по маменой линии зовут: ".$this->getFather()->getMother()->getLastname()." ".$this->getFather()->getMother()->getName()."<br>
-	    Моего дудушку по маменой линии зовут: ".$this->getFather()->getFather()->getLastname()." ".$this->getFather()->getFather()->getName();
+	    Мою бабушку по папеной линии зовут: ".$this->getFather()->getMother()->getLastname()." ".$this->getFather()->getMother()->getName()."<br>
+	    Моего дудушку по папеной линии зовут: ".$this->getFather()->getFather()->getLastname()." ".$this->getFather()->getFather()->getName();
 	}
 }
 $egor = new person("Егор","Петров",71);
