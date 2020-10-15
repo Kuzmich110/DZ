@@ -12,7 +12,7 @@ class Animal{
   function getNickname(){return $this->nickname;}
   function getAge(){return $age->age;}
   function getBreed(){return $this->breed;}
-  }
+}
 
 class Horse extends Animal{
   function run(){
@@ -30,5 +30,4 @@ $belka = new Horse("Belka",5,"Nikolay");
 $strelka = new Pegasus("Strelka",8,"Nikolay");
 echo $belka->run()."<br>";
 echo $strelka->fly();
-
 ?>
